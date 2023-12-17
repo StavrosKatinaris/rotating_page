@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Set the container height to full viewport height */
+}
+
+#left-section {
+    flex: 1;
+    height: 100%; /* Set left section height to 100% of the container */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rotatingObject {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+#right-section {
+    flex: 1;
+    height: 100%; /* Set right section height to 100% of the container */
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+#right-section p {
+    text-align: justify;
+}
